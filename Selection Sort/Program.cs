@@ -9,7 +9,9 @@ class Program
             new Person("John", 21),
             new Person("Alex", 26),
             new Person("Jacob", 77),
-            new Person("Andrew", 12)
+            new Person("Andrew", 12),
+            new Person("Micheal", 4),
+            new Person("Zak", 28)
         };
 
         Console.WriteLine("The original order: ");
@@ -20,7 +22,7 @@ class Program
         Console.WriteLine("After the selection sort, the order became: ");
         SelectionSort.Sort(people);
         for(int i = 0; i < people.Length; i ++){
-            Console.WriteLine(i + ". " + people[i] + ". ");
+            Console.WriteLine(i + ". " + people[i]);
         }
     }
 }
