@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics;
-using InputData;
+using SortingAlgorithAnalyzer.InputData;
+using SortingAlgorithAnalyzer;
 
 namespace Selection_Sort;
 
@@ -28,26 +29,6 @@ class Program
         //     Console.WriteLine(i + ". " + people[i]);
         // }
         int[] data = RandomData.GetInts_100000();
-
-        Console.WriteLine("Here's the unsorted array: ");
-        int indexer = 0;
-        foreach(var num in data){
-            Console.WriteLine(indexer + ". " + num);
-            indexer ++;
-        }
-        Console.WriteLine("Press enter to start the ordering process.");
-        Console.ReadLine();
-        Console.WriteLine("Here's the ordered data: ");
-        Stopwatch stopwatch = new Stopwatch();
-        stopwatch.Start();
-        SelectionSort.Sort<int>(data);
-        stopwatch.Stop();
-        Console.WriteLine("Here's the sorted array: ");
-        indexer = 0;
-        foreach(var num in data){
-            Console.WriteLine(indexer + ". " + num);
-            indexer ++;
-        }
-        Console.WriteLine("Selection Sort took: " + stopwatch.ElapsedMilliseconds + "ms, or " + (stopwatch.ElapsedMilliseconds / 1000) + "s.");
-    }
+        SortingAnalyzer.Analyze<int>(data, new SelectionSort());
+    }  
 }

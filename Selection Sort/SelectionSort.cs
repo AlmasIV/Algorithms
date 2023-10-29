@@ -1,7 +1,8 @@
+using SortingAlgorithm;
 namespace Selection_Sort;
 
-public static class SelectionSort{
-    public static void Sort<T>(T[] unorderedArray) where T : IComparable<T>{
+public class SelectionSort : ISort{
+    public void Sort<T>(T[] unorderedArray) where T : IComparable<T>{
         int smallest;
         int n = unorderedArray.Length;
         T temp;
