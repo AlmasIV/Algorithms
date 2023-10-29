@@ -1,7 +1,8 @@
+using SortingAlgorithm;
 namespace Insertion_Sort;
 
-public static class InsertionSort{
-    public static void Sort<T>(T[] unsortedArray) where T : IComparable<T>{
+public class InsertionSort : ISort{
+    public void Sort<T>(T[] unsortedArray) where T : IComparable<T>{
         int n = unsortedArray.Length;
         T temp;
         for(int i = 1; i < n; i ++){

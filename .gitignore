@@ -71,3 +71,53 @@ Shell Sort/obj/Debug/net7.0/Shell Sort.GlobalUsings.g.cs
 Shell Sort/obj/Debug/net7.0/Shell Sort.pdb
 Shell Sort/obj/Debug/net7.0/ref/Shell Sort.dll
 Shell Sort/obj/Debug/net7.0/refint/Shell Sort.dll
+Insertion Sort/bin/Debug/net7.0/SortingAlgorithm.dll
+Insertion Sort/bin/Debug/net7.0/SortingAlgorithm.pdb
+Insertion Sort/bin/Debug/net7.0/SortingAlgorithmAnalyzer.dll
+Insertion Sort/bin/Debug/net7.0/SortingAlgorithmAnalyzer.pdb
+Insertion Sort/obj/Debug/net7.0/Insertion Sort.csproj.AssemblyReference.cache
+Insertion Sort/obj/Debug/net7.0/Insertion Sort.csproj.CopyComplete
+SortingAlgorithm/bin/Debug/net7.0/SortingAlgorithm.deps.json
+SortingAlgorithm/bin/Debug/net7.0/SortingAlgorithm.dll
+SortingAlgorithm/bin/Debug/net7.0/SortingAlgorithm.pdb
+SortingAlgorithm/obj/project.assets.json
+SortingAlgorithm/obj/project.nuget.cache
+SortingAlgorithm/obj/SortingAlgorithm.csproj.nuget.dgspec.json
+SortingAlgorithm/obj/SortingAlgorithm.csproj.nuget.g.props
+SortingAlgorithm/obj/SortingAlgorithm.csproj.nuget.g.targets
+SortingAlgorithm/obj/Debug/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.cs
+SortingAlgorithm/obj/Debug/net7.0/SortingAlgorithm.AssemblyInfo.cs
+SortingAlgorithm/obj/Debug/net7.0/SortingAlgorithm.AssemblyInfoInputs.cache
+SortingAlgorithm/obj/Debug/net7.0/SortingAlgorithm.assets.cache
+SortingAlgorithm/obj/Debug/net7.0/SortingAlgorithm.csproj.CoreCompileInputs.cache
+SortingAlgorithm/obj/Debug/net7.0/SortingAlgorithm.csproj.FileListAbsolute.txt
+SortingAlgorithm/obj/Debug/net7.0/SortingAlgorithm.dll
+SortingAlgorithm/obj/Debug/net7.0/SortingAlgorithm.GeneratedMSBuildEditorConfig.editorconfig
+SortingAlgorithm/obj/Debug/net7.0/SortingAlgorithm.GlobalUsings.g.cs
+SortingAlgorithm/obj/Debug/net7.0/SortingAlgorithm.pdb
+SortingAlgorithm/obj/Debug/net7.0/ref/SortingAlgorithm.dll
+SortingAlgorithm/obj/Debug/net7.0/refint/SortingAlgorithm.dll
+SortingAlgorithmAnalyzer/bin/Debug/net7.0/SortingAlgorithm.dll
+SortingAlgorithmAnalyzer/bin/Debug/net7.0/SortingAlgorithm.pdb
+SortingAlgorithmAnalyzer/bin/Debug/net7.0/SortingAlgorithmAnalyzer.deps.json
+SortingAlgorithmAnalyzer/bin/Debug/net7.0/SortingAlgorithmAnalyzer.dll
+SortingAlgorithmAnalyzer/bin/Debug/net7.0/SortingAlgorithmAnalyzer.pdb
+SortingAlgorithmAnalyzer/obj/project.assets.json
+SortingAlgorithmAnalyzer/obj/project.nuget.cache
+SortingAlgorithmAnalyzer/obj/SortingAlgorithmAnalyzer.csproj.nuget.dgspec.json
+SortingAlgorithmAnalyzer/obj/SortingAlgorithmAnalyzer.csproj.nuget.g.props
+SortingAlgorithmAnalyzer/obj/SortingAlgorithmAnalyzer.csproj.nuget.g.targets
+SortingAlgorithmAnalyzer/obj/Debug/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.cs
+SortingAlgorithmAnalyzer/obj/Debug/net7.0/SortingAlgorithmAnalyzer.AssemblyInfo.cs
+SortingAlgorithmAnalyzer/obj/Debug/net7.0/SortingAlgorithmAnalyzer.AssemblyInfoInputs.cache
+SortingAlgorithmAnalyzer/obj/Debug/net7.0/SortingAlgorithmAnalyzer.assets.cache
+SortingAlgorithmAnalyzer/obj/Debug/net7.0/SortingAlgorithmAnalyzer.csproj.AssemblyReference.cache
+SortingAlgorithmAnalyzer/obj/Debug/net7.0/SortingAlgorithmAnalyzer.csproj.CopyComplete
+SortingAlgorithmAnalyzer/obj/Debug/net7.0/SortingAlgorithmAnalyzer.csproj.CoreCompileInputs.cache
+SortingAlgorithmAnalyzer/obj/Debug/net7.0/SortingAlgorithmAnalyzer.csproj.FileListAbsolute.txt
+SortingAlgorithmAnalyzer/obj/Debug/net7.0/SortingAlgorithmAnalyzer.dll
+SortingAlgorithmAnalyzer/obj/Debug/net7.0/SortingAlgorithmAnalyzer.GeneratedMSBuildEditorConfig.editorconfig
+SortingAlgorithmAnalyzer/obj/Debug/net7.0/SortingAlgorithmAnalyzer.GlobalUsings.g.cs
+SortingAlgorithmAnalyzer/obj/Debug/net7.0/SortingAlgorithmAnalyzer.pdb
+SortingAlgorithmAnalyzer/obj/Debug/net7.0/ref/SortingAlgorithmAnalyzer.dll
+SortingAlgorithmAnalyzer/obj/Debug/net7.0/refint/SortingAlgorithmAnalyzer.dll

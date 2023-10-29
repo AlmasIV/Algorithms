@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using InputData;
 
 namespace Selection_Sort;
 
@@ -26,28 +27,8 @@ class Program
         // for(int i = 0; i < people.Length; i ++){
         //     Console.WriteLine(i + ". " + people[i]);
         // }
-        Random random = new Random();
-        if(!File.Exists("../NumbersToSort.txt")){
-            using(var file = File.OpenWrite("../NumbersToSort.txt")){
-                using(StreamWriter write = new StreamWriter(file)){
-                    for(int i = 0; i < 100000; i ++){
-                        write.WriteLine(random.Next(int.MinValue, int.MaxValue));
-                    }
-                }
-            }
-        }
-        List<int> data = new List<int>();
-        string[] rawData;
-        using(var file = File.OpenRead("../NumbersToSort.txt")){
-            using(StreamReader reader = new StreamReader(file)){
-                rawData = reader.ReadToEnd().Split('\n');
-                foreach(string str in rawData){
-                    if(int.TryParse(str, out int val)){
-                        data.Add(val);
-                    }
-                }
-            }
-        }
+        int[] data = RandomData.GetInts_100000();
+
         Console.WriteLine("Here's the unsorted array: ");
         int indexer = 0;
         foreach(var num in data){
@@ -58,13 +39,12 @@ class Program
         Console.ReadLine();
         Console.WriteLine("Here's the ordered data: ");
         Stopwatch stopwatch = new Stopwatch();
-        int[] result = data.ToArray();
         stopwatch.Start();
-        SelectionSort.Sort<int>(result);
+        SelectionSort.Sort<int>(data);
         stopwatch.Stop();
         Console.WriteLine("Here's the sorted array: ");
         indexer = 0;
-        foreach(var num in result){
+        foreach(var num in data){
             Console.WriteLine(indexer + ". " + num);
             indexer ++;
         }
