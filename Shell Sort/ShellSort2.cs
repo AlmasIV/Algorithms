@@ -1,7 +1,9 @@
+using SortingAlgorithm;
+
 namespace Shell_Sort;
 
-public class ShellSort2{
-    public static void Sort<T>(T[] unsortedArray) where T : IComparable<T>{
+public class ShellSort2 : ISort{
+    public void Sort<T>(T[] unsortedArray) where T : IComparable<T>{
         int n = unsortedArray.Length;
         T temp;
         for(int gap = n / 2; gap > 0; gap = gap / 2){

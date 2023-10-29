@@ -1,18 +1,14 @@
-﻿namespace Shell_Sort;
+﻿using SortingAlgorithAnalyzer.InputData;
+using SortingAlgorithAnalyzer;
+
+namespace Shell_Sort;
 
 class Program
 {
     static void Main(string[] args)
     {
-        int[] nums = { 0, 22, 1, 3, 44, 7 };
-        Console.WriteLine("Before sorting: ");
-        foreach(var v in nums){
-            Console.WriteLine(v);
-        }
-        Console.WriteLine("After sorting: ");
-        ShellSort2.Sort<int>(nums);
-        foreach(var v in nums){
-            Console.WriteLine(v);
-        }
+        int[] data = RandomData.GetInts_100000();
+        SortingAnalyzer.Analyze<int>(data, new ShellSort());
+        SortingAnalyzer.SaveDataToFile<int>(data);
     }
 }
