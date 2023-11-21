@@ -5,7 +5,7 @@ class Program
     static void Main(string[] args)
     {
         int[] nums = new int[]{
-            1, -2, 22, 1, 23, 999, 0, -456, 23
+            1, 2, 1, 2
         };
         Console.WriteLine("Before sorting: ");
         foreach(var v in nums){

@@ -1,7 +1,7 @@
 namespace Merge_Sort;
 
 public class MergeSort<T> where T : IComparable<T?>{
-    public static T?[] temp;
+    private static T?[] temp;
     public static void Sort(T?[] unsortedArray){
         temp = new T?[unsortedArray.Length];
         s_Sort(unsortedArray, 0, unsortedArray.Length - 1);
