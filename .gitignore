@@ -285,3 +285,57 @@ Elementary Sorting Algorithms/Selection Sort/obj/Debug/net7.0/Selection Sort.Glo
 Elementary Sorting Algorithms/Selection Sort/obj/Debug/net7.0/Selection Sort.pdb
 Elementary Sorting Algorithms/Selection Sort/obj/Debug/net7.0/ref/Selection Sort.dll
 Elementary Sorting Algorithms/Selection Sort/obj/Debug/net7.0/refint/Selection Sort.dll
+Elementary Sorting Algorithms/Shell Sort/bin/Debug/net7.0/Shell Sort
+Elementary Sorting Algorithms/Shell Sort/bin/Debug/net7.0/Shell Sort.deps.json
+Elementary Sorting Algorithms/Shell Sort/bin/Debug/net7.0/Shell Sort.dll
+Elementary Sorting Algorithms/Shell Sort/bin/Debug/net7.0/Shell Sort.pdb
+Elementary Sorting Algorithms/Shell Sort/bin/Debug/net7.0/Shell Sort.runtimeconfig.json
+Elementary Sorting Algorithms/Shell Sort/bin/Debug/net7.0/SortingAlgorithm.dll
+Elementary Sorting Algorithms/Shell Sort/bin/Debug/net7.0/SortingAlgorithm.pdb
+Elementary Sorting Algorithms/Shell Sort/bin/Debug/net7.0/SortingAlgorithmAnalyzer.dll
+Elementary Sorting Algorithms/Shell Sort/bin/Debug/net7.0/SortingAlgorithmAnalyzer.pdb
+Elementary Sorting Algorithms/Shell Sort/obj/project.assets.json
+Elementary Sorting Algorithms/Shell Sort/obj/project.nuget.cache
+Elementary Sorting Algorithms/Shell Sort/obj/Shell Sort.csproj.nuget.dgspec.json
+Elementary Sorting Algorithms/Shell Sort/obj/Shell Sort.csproj.nuget.g.props
+Elementary Sorting Algorithms/Shell Sort/obj/Shell Sort.csproj.nuget.g.targets
+Elementary Sorting Algorithms/Shell Sort/obj/Debug/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.cs
+Elementary Sorting Algorithms/Shell Sort/obj/Debug/net7.0/apphost
+Elementary Sorting Algorithms/Shell Sort/obj/Debug/net7.0/Shell Sort.AssemblyInfo.cs
+Elementary Sorting Algorithms/Shell Sort/obj/Debug/net7.0/Shell Sort.AssemblyInfoInputs.cache
+Elementary Sorting Algorithms/Shell Sort/obj/Debug/net7.0/Shell Sort.assets.cache
+Elementary Sorting Algorithms/Shell Sort/obj/Debug/net7.0/Shell Sort.csproj.AssemblyReference.cache
+Elementary Sorting Algorithms/Shell Sort/obj/Debug/net7.0/Shell Sort.csproj.CopyComplete
+Elementary Sorting Algorithms/Shell Sort/obj/Debug/net7.0/Shell Sort.csproj.CoreCompileInputs.cache
+Elementary Sorting Algorithms/Shell Sort/obj/Debug/net7.0/Shell Sort.csproj.FileListAbsolute.txt
+Elementary Sorting Algorithms/Shell Sort/obj/Debug/net7.0/Shell Sort.dll
+Elementary Sorting Algorithms/Shell Sort/obj/Debug/net7.0/Shell Sort.GeneratedMSBuildEditorConfig.editorconfig
+Elementary Sorting Algorithms/Shell Sort/obj/Debug/net7.0/Shell Sort.genruntimeconfig.cache
+Elementary Sorting Algorithms/Shell Sort/obj/Debug/net7.0/Shell Sort.GlobalUsings.g.cs
+Elementary Sorting Algorithms/Shell Sort/obj/Debug/net7.0/Shell Sort.pdb
+Elementary Sorting Algorithms/Shell Sort/obj/Debug/net7.0/ref/Shell Sort.dll
+Elementary Sorting Algorithms/Shell Sort/obj/Debug/net7.0/refint/Shell Sort.dll
+Quicksort/bin/Debug/net7.0/Quicksort
+Quicksort/bin/Debug/net7.0/Quicksort.deps.json
+Quicksort/bin/Debug/net7.0/Quicksort.dll
+Quicksort/bin/Debug/net7.0/Quicksort.pdb
+Quicksort/bin/Debug/net7.0/Quicksort.runtimeconfig.json
+Quicksort/obj/project.assets.json
+Quicksort/obj/project.nuget.cache
+Quicksort/obj/Quicksort.csproj.nuget.dgspec.json
+Quicksort/obj/Quicksort.csproj.nuget.g.props
+Quicksort/obj/Quicksort.csproj.nuget.g.targets
+Quicksort/obj/Debug/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.cs
+Quicksort/obj/Debug/net7.0/apphost
+Quicksort/obj/Debug/net7.0/Quicksort.AssemblyInfo.cs
+Quicksort/obj/Debug/net7.0/Quicksort.AssemblyInfoInputs.cache
+Quicksort/obj/Debug/net7.0/Quicksort.assets.cache
+Quicksort/obj/Debug/net7.0/Quicksort.csproj.CoreCompileInputs.cache
+Quicksort/obj/Debug/net7.0/Quicksort.csproj.FileListAbsolute.txt
+Quicksort/obj/Debug/net7.0/Quicksort.dll
+Quicksort/obj/Debug/net7.0/Quicksort.GeneratedMSBuildEditorConfig.editorconfig
+Quicksort/obj/Debug/net7.0/Quicksort.genruntimeconfig.cache
+Quicksort/obj/Debug/net7.0/Quicksort.GlobalUsings.g.cs
+Quicksort/obj/Debug/net7.0/Quicksort.pdb
+Quicksort/obj/Debug/net7.0/ref/Quicksort.dll
+Quicksort/obj/Debug/net7.0/refint/Quicksort.dll
