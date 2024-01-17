@@ -2,6 +2,9 @@ namespace Quicksort;
 
 public class Quick<T> where T : IComparable<T>{
     public static void Sort(T[] inputs){
+        // Randomly shuffle the array before passing.
+        // Need to implement the shuffling method.
+
         s_Sort(inputs, 0, inputs.Length - 1);
     }
     private static void s_Sort(T[] inputs, int low, int high){
@@ -23,7 +26,7 @@ public class Quick<T> where T : IComparable<T>{
                 }
             }
             while(pivot.CompareTo(inputs[--j]) == -1){
-                if(i == low){
+                if(j == low){
                     break;
                 }
             }

@@ -1,5 +1,7 @@
 namespace Merge_Sort;
 
+// This is top-down mergesort which uses recursion.
+
 public class MergeSort<T> where T : IComparable<T?>{
     private static T?[] temp;
     public static void Sort(T?[] unsortedArray){
