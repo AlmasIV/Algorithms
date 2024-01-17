@@ -1,5 +1,6 @@
 namespace Elementary_Randomization;
 
+// Don't call the method multiple times for the same array, it's unnecessary (it completely randomizes an array in a single run).
 public static class Shuffler{
     private static Random s_random = new Random(Guid.NewGuid().GetHashCode());
     private static int s_pos = 0;
