@@ -6,7 +6,7 @@ namespace FindingPrimeFactors;
 class PrimeFactor {
 
     /// <summary>
-    ///     The first implementation, straightforward and simple. Runtime: O(N).
+    ///     The first implementation, straightforward and simple. Runtime: O(N^2).
     /// </summary>
     /// <remarks>
     /// <param name="number">
