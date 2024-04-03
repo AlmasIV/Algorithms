@@ -4,20 +4,22 @@ class Program
 {
     static void Main(string[] args)
     {
-        SinglyLinkedList<int> myList = new SinglyLinkedList<int>();
-        myList.Add(12);
-        myList.Add(19);
-        myList.Add(1);
-        Console.WriteLine("Before the deletion: ");
-        foreach(int i in myList){
-            Console.WriteLine(i);
-        }
-        myList.DeleteLast();
-        myList.DeleteLast();
-        myList.DeleteLast();
-        Console.WriteLine("After the deletion: ");
-        foreach(int i in myList){
-            Console.WriteLine(i);
+        SortedDoublyLinkedList<int> l = new SortedDoublyLinkedList<int>();
+
+        l.Add(-2);
+        l.Add(12);
+        l.Add(22);
+        l.Add(14);
+        l.Add(-99);
+        l.Add(15);
+        l.Add(293);
+
+        ConsolePrint<int>(l);
+    }
+    static void ConsolePrint<T>(ILinkedList<T> linkedList){
+        Console.WriteLine();
+        foreach(T t in linkedList){
+            Console.WriteLine(t);
         }
     }
 }

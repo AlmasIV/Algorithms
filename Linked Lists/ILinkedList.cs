@@ -6,7 +6,7 @@ namespace Linked_Lists;
 /// <typeparam name="T">
 ///     The type that the linked list operates on.
 /// </typeparam>
-public interface ILinkedList<T> {
+public interface ILinkedList<T> : IEnumerable<T> {
     /// <summary>
     ///     Adds a new node that holds the value of <paramref name="data" /> to the end of the linked list.
     /// </summary>
@@ -31,17 +31,6 @@ public interface ILinkedList<T> {
     ///     Thrown if the <paramref name="value" /> is <c>null</c>.
     /// </exception>
     public bool Exists(T value);
-
-    /// <summary>
-    ///     Prepends a new node that holds the value of <paramref name="data" /> to the beginning of the linked list.
-    /// </summary>
-    /// <param name="data">
-    ///     The value that a new node will hold.
-    /// </param>
-    /// <exception cref="System.ArgumentNullException">
-    ///     Thrown if the <paramref name="data" /> is <c>null</c>.
-    /// </exception>
-    public void Prepend(T data);
 
     /// <summary>
     ///     Deletes the last element from the linked list.

@@ -11,17 +11,10 @@ namespace Linked_Lists;
 /// <typeparam name="T">
 ///     The type that is being stored.
 /// </typeparam>
-public class SinglyLinkedList<T> : IEnumerable<T>, ILinkedList<T>
+public class SinglyLinkedList<T> : ILinkedList<T>
 {
-    /// <summary>
-    ///     Gets the top cell (the first cell) of the singly linked list. Or <c>null</c> if the singly linked list is empty.
-    /// </summary>
-    public Cell<T>? Top { get; private set; } = null;
-
-    /// <summary>
-    ///     Gets the bottom cell (the last added item) of the singly linked list. Or <c>null</c> if the singly linked list is empty.
-    /// </summary>
-    public Cell<T>? Bottom { get; private set; } = null;
+    private Cell<T>? _top { get; set; } = null;
+    private Cell<T>? _bottom { get; set; } = null;
     
     /// <summary>
     ///     Gets the number of cells (<c>Cell</c>) that are contained in the singly linked list.
@@ -36,13 +29,13 @@ public class SinglyLinkedList<T> : IEnumerable<T>, ILinkedList<T>
             Data = data
         };
 
-        if(Top is null){
-            Top = newCell;
-            Bottom = Top;
+        if(_top is null){
+            _top = newCell;
+            _bottom = _top;
         }
         else{
-            Bottom!.Next = newCell;
-            Bottom = newCell;
+            _bottom!.Next = newCell;
+            _bottom = newCell;
         }
 
         Length ++;
@@ -62,12 +55,21 @@ public class SinglyLinkedList<T> : IEnumerable<T>, ILinkedList<T>
         return false;
     }
 
+    /// <summary>
+    ///     Prepends a new node that holds the value of <paramref name="data" /> to the beginning of the linked list.
+    /// </summary>
+    /// <param name="data">
+    ///     The value that a new node will hold.
+    /// </param>
+    /// <exception cref="System.ArgumentNullException">
+    ///     Thrown if the <paramref name="data" /> is <c>null</c>.
+    /// </exception>
     public void Prepend(T data){
         // Runtime O(1).
 
         ArgumentNullException.ThrowIfNull(data);
 
-        if(Top is null){
+        if(_top is null){
             Add(data);
         }
         else{
@@ -75,8 +77,8 @@ public class SinglyLinkedList<T> : IEnumerable<T>, ILinkedList<T>
                 Data = data
             };
 
-            newCell.Next = Top;
-            Top = newCell;
+            newCell.Next = _top;
+            _top = newCell;
             
             Length ++;
         }
@@ -85,19 +87,19 @@ public class SinglyLinkedList<T> : IEnumerable<T>, ILinkedList<T>
     public void DeleteLast(){
         // Runtime O(N).
 
-        if(Top is null){
+        if(_top is null){
             throw new InvalidOperationException("The singly linked list is empty.");
         }
 
-        if(Bottom == Top){
+        if(_bottom == _top){
             Clear();
         }
         else{
-            Cell<T>? temp = Top;
+            Cell<T>? temp = _top;
             while(temp is not null){
-                if(temp.Next == Bottom){
-                    Bottom = temp;
-                    Bottom.Next = null;
+                if(temp.Next == _bottom){
+                    _bottom = temp;
+                    _bottom.Next = null;
                     break;
                 }
 
@@ -110,8 +112,8 @@ public class SinglyLinkedList<T> : IEnumerable<T>, ILinkedList<T>
     public void Clear(){
         // Runtime O(1).
 
-        Top = null;
-        Bottom = null;
+        _top = null;
+        _bottom = null;
 
         Length = 0;
     }
@@ -120,7 +122,7 @@ public class SinglyLinkedList<T> : IEnumerable<T>, ILinkedList<T>
     {
         // Runtime O(N).
 
-        Cell<T>? temp = Top;
+        Cell<T>? temp = _top;
 
         while(temp is not null){
             yield return temp.Data;

@@ -11,17 +11,10 @@ namespace Linked_Lists;
 /// <typeparam name="T">
 ///     The type that is being stored.
 /// </typeparam>
-public class DoublyLinkedList<T> : IEnumerable<T>, ILinkedList<T>
+public class DoublyLinkedList<T> : ILinkedList<T>
 {
-    /// <summary>
-    ///     Gets the top cell (the first cell) of the doubly linked list. Or <c>null</c> if the doubly linked list is empty.
-    /// </summary>
-    public DoublyCell<T>? Top { get; private set; } = null;
-
-    /// <summary>
-    ///     Gets the bottom cell (the last added item) of the doubly linked list. Or <c>null</c> if the doubly linked list is empty.
-    /// </summary>
-    public DoublyCell<T>? Bottom { get; private set; } = null;
+    private DoublyCell<T>? _top { get; set; } = null;
+    private DoublyCell<T>? _bottom { get; set; } = null;
 
     /// <summary>
     ///     Gets the number of cells (<c>Cell</c>) that are contained in the doubly linked list.
@@ -38,14 +31,14 @@ public class DoublyLinkedList<T> : IEnumerable<T>, ILinkedList<T>
             Data = data
         };
 
-        if(Top is null){
-            Top = cell;
-            Bottom = Top;
+        if(_top is null){
+            _top = cell;
+            _bottom = _top;
         }
         else{
-            Bottom!.Next = cell;
-            cell.Previous = Bottom;
-            Bottom = cell;
+            _bottom!.Next = cell;
+            cell.Previous = _bottom;
+            _bottom = cell;
         }
 
         Length ++;
@@ -55,8 +48,8 @@ public class DoublyLinkedList<T> : IEnumerable<T>, ILinkedList<T>
     {
         // Runtime O(1).
 
-        Top = null;
-        Bottom = null;
+        _top = null;
+        _bottom = null;
 
         Length = 0;
     }
@@ -65,16 +58,16 @@ public class DoublyLinkedList<T> : IEnumerable<T>, ILinkedList<T>
     {
         // Runtime O(1).
 
-        if(Top is null){
+        if(_top is null){
             throw new InvalidOperationException("The doubly linked list is empty.");
         }
 
-        if(Bottom == Top){
+        if(_bottom == _top){
             Clear();
         }
         else{
-            Bottom = Bottom!.Previous;
-
+            _bottom = _bottom!.Previous;
+            _bottom!.Next = null;
             Length --;
         }
     }
@@ -97,7 +90,7 @@ public class DoublyLinkedList<T> : IEnumerable<T>, ILinkedList<T>
     {
         // Runtime O(N).
 
-        DoublyCell<T>? temp = Top;
+        DoublyCell<T>? temp = _top;
 
         while(temp is not null){
             yield return temp.Data;
@@ -105,9 +98,34 @@ public class DoublyLinkedList<T> : IEnumerable<T>, ILinkedList<T>
         }
     }
 
+    /// <summary>
+    ///     Prepends a new node that holds the value of <paramref name="data" /> to the beginning of the linked list.
+    /// </summary>
+    /// <param name="data">
+    ///     The value that a new node will hold.
+    /// </param>
+    /// <exception cref="System.ArgumentNullException">
+    ///     Thrown if the <paramref name="data" /> is <c>null</c>.
+    /// </exception>
     public void Prepend(T data)
     {
-        throw new NotImplementedException();
+        // Runtime O(1).
+
+        ArgumentNullException.ThrowIfNull(data);
+
+        if(_top is null){
+            Add(data);
+        }
+        else{
+            DoublyCell<T> newCell = new DoublyCell<T>(){
+                Data = data
+            };
+            newCell.Next = _top;
+            _top.Previous = newCell;
+
+            _top = newCell;
+            Length ++;
+        }
     }
 
     IEnumerator IEnumerable.GetEnumerator()
