@@ -13,6 +13,7 @@ class Program
         l.Add(-99);
         l.Add(15);
         l.Add(293);
+        l.Add(0);
 
         ConsolePrint<int>(l);
     }
